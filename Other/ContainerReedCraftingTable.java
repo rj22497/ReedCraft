@@ -30,8 +30,8 @@ public class ContainerReedCraftingTable extends Container
 
         this.addSlotToContainer(new SlotCrafting(invPlayer.player, craftMatrix, craftResult,0, 141, 43));
 
-        for (int i = 0; i < 5; i++) {
-            for(int k = 0; k < 5; k++) {
+        for (int i = 0; i < 3; i++) {
+            for(int k = 0; k < 3; k++) {
                 this.addSlotToContainer(new Slot(craftMatrix, k + i * 5, 8 + k * 18, 7 + i * 18));
             }
         }

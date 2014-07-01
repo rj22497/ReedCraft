@@ -1,8 +1,10 @@
 package com.rj.ReedToolPack.RegistryFiles;
 
+import com.rj.ReedToolPack.Other.GuiHandler;
 import com.rj.ReedToolPack.Other.ReedToolsCreativeTab;
 import com.rj.ReedToolPack.ReedCraftingTable;
 import com.rj.ReedToolPack.Tools.ReedPickAxe;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -49,6 +51,10 @@ public class RegisterHelper
         });
 
     }
+
+
+
+
     public static void registerItem(Item item)
     {
         GameRegistry.registerItem(item, ReedToolPackMain.MODID+ "_" + item.getUnlocalizedName().substring(5));
